@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <h1>Lista de Bancos</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <td>ID</td>
+                <td>Nombre</td>
+                <td>Deuda</td>
+                <td>Pagado</td>
+                <td></td>
+            </tr>
+        </thead>
+        <tbody id="tablaBody"></tbody>
+    </table>
+    <div id="pagar">
+        <h3>¿Como desea Pagar?</h3>
+        <form>
+            <input onchange="tipoPago(this)" type="radio" name="pago" value="cuota">Por Cuotas
+            <input onchange="tipoPago(this)" type="radio" name="pago" value="completo">Completo<br>
+            <div id="cuotas">
+                <input type="number" placeholder="Cantidad de cuotas">
+                <div id="cantidad"></div>
+            </div>
+            <div id="pagoCompleto"><h3>Pagar Completo</h3></div>
+            <div id="PagarBtn"></div>
+        </form>
+    </div>
+</body>
+<script src="js/index.js"></script>
+</html>
